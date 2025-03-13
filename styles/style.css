@@ -219,3 +219,38 @@ section {
 }
 
 
+.skills {
+    background-color: var(--bg-color);
+    color: black;
+}
+
+.skills h2 {
+    color: var(--text-color);
+    font-size: 7rem;
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.skills-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    height: 600px;
+    border-radius: 3rem;
+    cursor: pointer;
+    border: 5px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.skills-box:hover {
+    background-color: var(--second-bg-color);
+    color: var(--main-color)
+}
